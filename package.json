@@ -1,0 +1,34 @@
+{
+  "name": "aawc",
+  "version": "1.0.0",
+  "description": "Another Asynchonous Web Chat",
+  "main": "app.js",
+  "dependencies": {
+    "html-minifier": "^4.0.0",
+    "micro": "^9.4.1",
+    "router": "^1.3.7",
+    "urlencoded-body-parser": "^3.0.0"
+  },
+  "scripts": {
+    "start": "micro",
+    "dev": "micro-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saiv46/aawc.git"
+  },
+  "keywords": [
+    "chat",
+    "web",
+    "nojs"
+  ],
+  "author": "Saiv46",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saiv46/aawc/issues"
+  },
+  "homepage": "https://github.com/saiv46/aawc#readme",
+  "devDependencies": {
+    "micro-dev": "^3.1.0"
+  }
+}

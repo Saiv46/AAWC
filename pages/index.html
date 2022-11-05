@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>{title}</title>
+	<meta name="description" content="{description}">
+	<style nonce="{nonce}">
+		body {
+			margin: 2em;
+			font-family: 'Segoe UI', Tahoma, sans-serif
+		}
+
+		iframe {
+			width: 100%;
+			border: none
+		}
+
+		iframe.form {
+			height: 5em
+		}
+
+		iframe.chat {
+			border-radius: 3px;
+			height: calc(100vh - 14em)
+		}
+
+		@media only screen and (max-width: 600px) {
+			iframe.form {
+				height: 12em
+			}
+
+			iframe.chat {
+				height: calc(100vh - 21em)
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<h1>/{roomId}/</h1>
+	<iframe class="form" src="form"></iframe>
+	<iframe class="chat" src="chat"></iframe>
+	<footer>running <a href="{packageSource}" target="_blank">{packageName}</a> v{packageVersion}</footer>
+</body>
+
+</html>

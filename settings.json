@@ -1,0 +1,8 @@
+{
+	"title": "/{roomId}/ chat",
+	"description": "Online chat demo. No JavaScript required",
+	"sessionSalt": null,
+	"defaultRoomId": "general",
+	"defaultName": "Anonymous",
+	"maxLastMessages": 50
+}

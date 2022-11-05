@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Archive of {title}</title>
+	<style nonce="{nonce}">
+		body {
+			margin: 2em;
+			font-family: 'Segoe UI', Tahoma, sans-serif;
+			background: #eee
+		}
+
+		ul {
+			display: flex;
+			text-align: left;
+			flex-direction: column-reverse
+		}
+
+		li {
+			display: inline-block;
+			margin: .75em;
+			font-size: initial
+		}
+
+		span {
+			font-weight: lighter
+		}
+
+		span:after {
+			content: ": "
+		}
+	</style>
+</head>
+
+<body>
+	<h2>/{roomId}/ chat archive:</h2>
+	<ul>
+		%MESSAGES%
+	</ul>
+</body>
+
+</html>

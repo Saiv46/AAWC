@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Messages of {title}</title>
+	<style nonce="{nonce}">
+		body {
+			margin: 0;
+			font-family: 'Segoe UI', Tahoma, sans-serif;
+			background: #eee
+		}
+
+		ul {
+			display: flex;
+			text-align: left;
+			flex-direction: column-reverse
+		}
+
+		li {
+			display: inline-block;
+			margin: .75em;
+			font-size: initial
+		}
+
+		span {
+			font-weight: lighter
+		}
+
+		span:after {
+			content: ": "
+		}
+
+		time:before {
+			content: "["
+		}
+
+		time:after {
+			content: "]"
+		}
+	</style>
+	<meta http-equiv="refresh" content="3">
+</head>
+
+<body>
+	<span>Showing last {maxLastMessages} messages</span><a href="archive" target="_top">Read all</a>
+	<ul>
+		%MESSAGES%
+	</ul>
+</body>
+
+</html>
